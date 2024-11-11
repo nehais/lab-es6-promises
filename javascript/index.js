@@ -55,8 +55,8 @@ getInstruction(
 getInstruction(
   "mashedPotatoes",
   0,
-  (step1) => {
-    document.querySelector("#mashedPotatoes").innerHTML += `<li>${step1}</li>`;
+  (step0) => {
+    document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`;
     getInstruction(
       "mashedPotatoes",
       1,
@@ -67,24 +67,24 @@ getInstruction(
         getInstruction(
           "mashedPotatoes",
           2,
-          (step1) => {
+          (step2) => {
             document.querySelector(
               "#mashedPotatoes"
-            ).innerHTML += `<li>${step1}</li>`;
+            ).innerHTML += `<li>${step2}</li>`;
             getInstruction(
               "mashedPotatoes",
               3,
-              (step1) => {
+              (step3) => {
                 document.querySelector(
                   "#mashedPotatoes"
-                ).innerHTML += `<li>${step1}</li>`;
+                ).innerHTML += `<li>${step3}</li>`;
                 getInstruction(
                   "mashedPotatoes",
                   4,
-                  (step1) => {
+                  (step3) => {
                     document.querySelector(
                       "#mashedPotatoes"
-                    ).innerHTML += `<li>${step1}</li>`;
+                    ).innerHTML += `<li>${step4}</li>`;
 
                     mashedPotatoesImg;
                     document.querySelector("#mashedPotatoesImg").style.display =
